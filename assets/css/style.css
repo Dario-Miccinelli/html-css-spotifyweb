@@ -130,7 +130,7 @@ ul.playlist-menu li {
   top: 0;
   right: 0;
   width: calc(100% - 230px);
-  height: 70px;
+  height: 75px;
   overflow-y: hidden;
   justify-content: flex-end;
   align-items: center;
@@ -146,20 +146,6 @@ ul.playlist-menu li {
   color: #fff;
 }
 
-footer {
-  background-color: #282828;
-  height: 8.5%;
-  overflow-y: hidden;
-  color: #fff;
-  padding: 0 0.5rem;
-  justify-content: space-between;
-  z-index: 2;
-}
-
-footer .footer-side {
-  background-color: black;
-  width: 10rem;
-}
 
 
 #main-content nav ul {
@@ -220,6 +206,178 @@ img {
   width: 100%;
   display: block;
 }
+
+
+footer {
+  background-color: #282828;
+  height: 79px;
+  overflow-y: hidden;
+  color: white;
+  padding: 0 0.5rem;
+ 
+}
+
+footer .footer-side {
+  align-items: center;
+  width: 15rem;
+}
+
+footer .footer-side img {
+  width: 50px;
+  display: inline;
+  margin-right: 10px;
+}
+
+footer .footer-side .text {
+  flex-grow: 1;
+}
+
+footer .footer-side .text h4 {
+  font-size: 0.8rem;
+}
+
+footer .footer-side .text a {
+  font-size: 0.65rem;
+  opacity: 0.5;
+  line-height: 1rem;
+  transition: all 0.2s;
+}
+
+footer .footer-side .text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+footer .footer-side .icons {
+  font-size: 0.95rem;
+  color: white;
+}
+
+footer .footer-side.info-track .icons {
+  margin-left: 0.7rem;
+}
+
+footer .footer-side.info-track .icons i {
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+footer .footer-side.info-track .icons i:hover {
+  opacity: 1;
+}
+
+footer .footer-side .icons i {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+footer .footer-side .icons i.fa-list {
+  margin-left: 0;
+}
+
+footer .bar {
+  height: 0.25rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+footer .bar.empty {
+  background-color: #5a5a5a;
+}
+
+footer .bar.full {
+  background-color: #c1c1c1;
+  position: relative;
+  transition: all 0.2s;
+}
+
+footer .footer-side .bar.empty {
+  width: 7rem;
+  margin-left: 0.7rem;
+}
+
+footer .footer-side .bar.full {
+  width: 35%;
+}
+
+footer .bar.full:after {
+  content: '';
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+footer .bar:hover .bar.full {
+  background-color: #adff2f;
+}
+
+footer .bar:hover .bar.full:after {
+  opacity: 1;
+}
+
+footer .footer-side.volume-ctrl {
+  justify-content: flex-end;
+}
+
+footer .footer-side.volume-ctrl .icons {
+  font-size: 0.8rem;
+}
+
+footer .footer-player {
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}    
+
+footer .footer-player .controllers i {
+  margin: 0 0.5rem;
+  vertical-align: middle;
+  cursor: pointer;
+}    
+
+footer .footer-player .controllers i.fa-play-circle {
+  margin: 0 1.2rem;
+  transition: all 0.2s;
+}
+
+footer .footer-player .controllers i.fa-play-circle:hover {
+  transform: scale(1.1);
+}
+
+footer .footer-player {
+  align-items: center;
+}
+
+footer .footer-player .bar-track {
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+footer .footer-player .bar-track span {
+  font-size: 0.6rem;
+}
+
+footer .footer-player .bar-track .bar.empty {
+  width: 75%;
+  margin: 0px 1.5rem;
+}
+
+footer .footer-player .bar-track .bar.full {
+  width: 20%;
+}
+
+
 /* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  */
 #navigation-menu ul.main-menu li a:hover {
     color: #fff;
@@ -229,4 +387,10 @@ ul.playlist-menu li:hover {
   color: #fff;
 }
 
+footer .footer-side .text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 /* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  *//* HOVER  */
+

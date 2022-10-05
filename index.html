@@ -1,121 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify Boolean</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <div class="app-wrapper">
-      <main class="flex-container">
-        <nav id="navigation-menu" class="flex-container">
-          <!-- LOGO -->
-          <div class="logo">
-            <img src="./assets/img/logo.svg" alt="Logo Spotify" />
-          </div>
-          <!-- MENU' -->
-         
-            <ul class="main-menu">
-              <!-- Item -->
-              <li class="current">
-                <a href="#">
-                  <img class="home" src="./assets/img/home.svg" alt="Home icon" />
-                  Home
-                </a>
-              </li>
 
-              <!-- Item -->
-              <li>
-                <a href="#">
-                  <img src="./assets/img/search.svg" alt="Search icon" />
-                  Cerca
-                </a>
-              </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Boolean</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-              <!-- Item -->
-              <li>
-                <a href="#">
-                  <img src="./assets/img/libreria.svg" alt="Library icon" />
-                  La tua libreria
-                </a>
-              </li>
-            </ul>
-            <h2>PLAYLIST</h2>
-            <ul class="playlist-menu">
-                <li class="create-item">
-                    <a href="#">
-                        <span>+</span>
-                        Crea Playlist
-                    </a>
-                </li>
-
-                <!-- Item -->
-                <li>
-                    <a href="#">Nome Playlist</a>
-                </li>
-
-                <!-- Item -->
-                <li>
-                    <a href="#">Nome Playlist</a>
-                </li>
-
-                <!-- Item -->
-                <li>
-                    <a href="#">Nome Playlist</a>
-                </li>
-
-                <!-- Item -->
-                <li>
-                    <a href="#">Nome Playlist</a>
-                </li>
-
-                <!-- Item -->
-                <li>
-                    <a href="#">Nome Playlist</a>
-                </li>
-
-                <!-- Item -->
-                <li>
-                    <a href="#">Nome Playlist</a>
-
-
-                    <!-- USER AREA -->
-
-
-                    <div class="user-area">
-
-                        <!-- Install App -->
-                        <a class="install-app" href="#">
-                            <img src="./assets/img/download.svg" alt="Download icon">
-                            Installa app
-                        </a>
-    
-                        <hr>
-    
-                        <!-- User Profile -->
-                        <a class="user-profile" href="#">
-                            <span>
-                                <img src="./assets/img/profile.svg" alt="Profile Icon">
-                            </span>
-                            John Doe
-                        </a>
-                    </div>
-        </nav>
-
-        <div id="main-content"></div>
-
-        <div id="upgrade-bar" class="flex-container">
-          <a href="#" class="btn">EFFETTUA L'UPGRADE</a>
+<body>
+  <div class="app-wrapper">
+    <main class="flex-container">
+      <nav id="navigation-menu" class="flex-container">
+        <!-- LOGO -->
+        <div class="logo">
+          <img src="./assets/img/logo.svg" alt="Logo Spotify" />
         </div>
-      </main>
+        <!-- MENU' -->
 
-      <footer class="flex-container">
-        <div class="footer-side flex-container">brano + foto + icone</div>
-        <div class="footer-player flex-container">player</div>
-        <div class="footer-side flex-container volume-control">volume</div>
-      </footer>
-    </div>
-  </body>
+        <ul class="main-menu">
+          <!-- Item -->
+          <li class="current">
+            <a href="#">
+              <img class="home" src="./assets/img/home.svg" alt="Home icon" />
+              Home
+            </a>
+          </li>
+
+          <!-- Item -->
+          <li>
+            <a href="#">
+              <img src="./assets/img/search.svg" alt="Search icon" />
+              Cerca
+            </a>
+          </li>
+
+          <!-- Item -->
+          <li>
+            <a href="#">
+              <img src="./assets/img/libreria.svg" alt="Library icon" />
+              La tua libreria
+            </a>
+          </li>
+        </ul>
+        <h2>PLAYLIST</h2>
+        <ul class="playlist-menu">
+          <li class="create-item">
+            <a href="#">
+              <span>+</span>
+              Crea Playlist
+            </a>
+          </li>
+
+          <!-- Item -->
+          <li>
+            <a href="#">Nome Playlist</a>
+          </li>
+
+          <!-- Item -->
+          <li>
+            <a href="#">Nome Playlist</a>
+          </li>
+
+          <!-- Item -->
+          <li>
+            <a href="#">Nome Playlist</a>
+          </li>
+
+          <!-- Item -->
+          <li>
+            <a href="#">Nome Playlist</a>
+          </li>
+
+          <!-- Item -->
+          <li>
+            <a href="#">Nome Playlist</a>
+          </li>
+
+          <!-- Item -->
+          <li>
+            <a href="#">Nome Playlist</a>
+
+
+            <!-- USER AREA -->
+
+
+            <div class="user-area">
+
+              <!-- Install App -->
+              <a class="install-app" href="#">
+                <img src="./assets/img/download.svg" alt="Download icon">
+                Installa app
+              </a>
+
+              <hr>
+
+              <!-- User Profile -->
+              <a class="user-profile" href="#">
+                <span>
+                  <img src="./assets/img/profile.svg" alt="Profile Icon">
+                </span>
+                John Doe
+              </a>
+            </div>
+      </nav>
+
+      <div id="main-content">
+       <nav>
+        <ul class="flex-container">
+          <li>
+            <a class="current" href="#">IN EVIDENZA</a>
+          </li>
+          <li>
+            <a href="#">PODCAST</a>
+          </li>
+          <li>CLASSIFICHE</li>
+          <li>GENERI E MOOD</li>
+          <li>NUOVE USCITE</li>
+          <li>SCOPRI</li>
+        </ul>
+       </nav>
+      </div>
+
+      <div id="upgrade-bar" class="flex-container">
+        <a href="#" class="btn">EFFETTUA L'UPGRADE</a>
+      </div>
+    </main>
+
+    <footer class="flex-container">
+      <div class="footer-side flex-container">brano + foto + icone</div>
+      <div class="footer-player flex-container">player</div>
+      <div class="footer-side flex-container volume-control">volume</div>
+    </footer>
+  </div>
+</body>
+
 </html>

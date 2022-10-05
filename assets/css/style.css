@@ -162,12 +162,19 @@ footer .footer-side {
 }
 
 
+#main-content nav ul {
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+}
 
-
-
-
-
-
+#main-content nav ul li a.current::after {
+  display: block;
+  content: "";
+  width: 40px;
+  border-bottom: 2px solid rgb(173, 255, 47);
+  margin-left: 1.5rem;
+}
 
 
 

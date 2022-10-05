@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+a {
+    color: #fff;
+}
+
 
 .app-wrapper {
     height: 100vh;
@@ -32,6 +36,17 @@
     padding: 1.5rem;
 }
 
+#navigation-menu ul.main-menu li a img {
+    width: 2rem;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: middle;
+    
+}
+
+
+
 #main-content {
     width: calc(100% - 230px);
     height: 850px;
@@ -57,7 +72,6 @@
 
 #upgrade-bar a.btn {
     padding: 10px 36px;
-    color: #fff;
     border: 2px solid #fff;
     border-radius: 1.2rem;
     font-size: 0.8rem;
@@ -67,12 +81,12 @@
 
 footer {
     background-color: #282828;
-    height: 80px;
+    height: 8.5%;
     overflow-y: hidden;
     color: #fff;
     padding: 0 0.5rem;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
 }
 
 

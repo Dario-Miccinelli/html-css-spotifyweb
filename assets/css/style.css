@@ -81,8 +81,8 @@ body {
 nav .user-area a.user-profile span {
   background-color: #808080;
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
   border-radius: 50%;
   overflow: hidden;
@@ -93,8 +93,8 @@ ul.playlist-menu li {
 }
 
 #navigation-menu .user-area {
-  margin-top: 13rem;
-  margin-right: 5rem;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
 }
 
 #navigation-menu .user-area a.install-app img {
@@ -389,6 +389,10 @@ footer .footer-side .text a:hover {
   display: none;
 }
 
+#navigation-menu > ul.playlist-menu {
+  flex: 1;
+}
+
 /* HOVER  */ /* HOVER  */ /* HOVER  */ /* HOVER  */ /* HOVER  */ /* HOVER  */ /* HOVER  */ /* HOVER  */ /* HOVER  */
 
 /* MEDIA QUERY */
@@ -532,28 +536,73 @@ margin: 0.5rem 0.1rem;
 
 #navigation-menu > div.user-area {
   margin: 0;
+  margin-bottom: 15px;
 }
 
 
 #navigation-menu .user-area {
-  position: absolute;
-  top: 520px;
+ 
   margin-left: 0.1rem;
   font-size: 5px;
-  margin-top: 0;
+  margin-bottom: 0px;
   color: #fff;
 }
+
 #navigation-menu .user-area hr {
   width: 10px;
   margin-left: 10px;
 }
 
 #navigation-menu .user-area a.user-profile {
-  font-size: 5px;
-  font-weight: 800;
+  font-size: 3px;
   color: black;
   margin-left: 5px;
 }
 
+}
+/* MEDIA QUERY TABLET *//* MEDIA QUERY TABLET *//* MEDIA QUERY TABLET *//* MEDIA QUERY TABLET *//* MEDIA QUERY TABLET */
 
+@media only screen and (min-width: 482px) and (max-width: 780px) {
+  /* tablet [480 -> 780]*/ 
+  #navigation-menu .user-area {
+    margin-top: 5rem;
+    margin-left: 0.5rem;
+}
+
+#main-content section .columns .col {
+  width: calc(100% / 4);
+  padding: 0;
+  font-size: 0.7rem;
+}
+
+
+#main-content nav ul {
+  flex-wrap: wrap;
+  width: 95%;
+  justify-content: center;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+#main-content nav ul li {
+
+padding: 0.2rem;
+}
+
+.margin-right {
+  width: 118px;
+}
+
+#main-content section .subtitle {
+  font-size: 0.65rem;
+  margin-top: 0.3rem;
+}
+
+footer {
+  height: 60px;
+}
+
+#main-content {
+  height: calc(100vh - 60px);
+}
 }
